@@ -3,8 +3,8 @@ import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'عن مكتب خدمات ومعاملات رسمية | أفضل مكتب معقب في السعودية',
-  description: 'تعرف على مكتب خدمات ومعاملات رسمية أفضل معقب في السعودية. ننجز كافة المعاملات الحكومية (الجوازات، مكتب العمل، المرور) بسرعة وبمصداقية مع الدفع بعد الإنجاز.',
+  title: 'عن مكتب ابو محمد المطيري | أفضل مكتب معقب في السعودية',
+  description: 'تعرف على مكتب ابو محمد المطيري أفضل معقب في السعودية. ننجز كافة المعاملات الحكومية (الجوازات، مكتب العمل، المرور) بسرعة وبمصداقية مع الدفع بعد الإنجاز.',
 };
 
 export default function AboutPage() {
@@ -18,10 +18,10 @@ export default function AboutPage() {
             تعرف علينا
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-primary-900 mb-6 tracking-tight">
-            عن مكتب <span className="text-accent-500">خدمات ومعاملات رسمية</span>
+            عن مكتب <span className="text-accent-500">ابو محمد المطيري</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
-            مكتب خدمات ومعاملات رسمية هو خيارك الأمثل لإنهاء كافّة الخدمات والمعاملات الرسمية والحكومية في المملكة العربية السعودية بسرعة، دقة، وموثوقية عالية مع التزام راسخ بالشفافية.
+            مكتب ابو محمد المطيري هو خيارك الأمثل لإنهاء كافّة الخدمات والمعاملات الرسمية والحكومية في المملكة العربية السعودية بسرعة، دقة، وموثوقية عالية مع التزام راسخ بالشفافية.
           </p>
         </ScrollReveal>
 
@@ -85,7 +85,7 @@ export default function AboutPage() {
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-primary-900 leading-tight">لماذا تختار التعامل معنا وتثق بنا؟</h2>
               <p className="text-gray-600 text-lg mb-10 font-medium leading-relaxed">
-                في مكتب خدمات ومعاملات رسمية، نقدر وقتك الثمين وندرك أهمية المعاملات التي توكلها إلينا، ولذلك نقدم تجربة متكاملة ترتكز على الثقة.
+                في مكتب ابو محمد المطيري، نقدر وقتك الثمين وندرك أهمية المعاملات التي توكلها إلينا، ولذلك نقدم تجربة متكاملة ترتكز على الثقة.
               </p>
               
               <ul className="space-y-6">

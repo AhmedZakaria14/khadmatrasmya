@@ -2,8 +2,8 @@ import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'رقم معقب | تواصل مع مكتب خدمات ومعاملات رسمية في السعودية',
-  description: 'هل تبحث عن رقم معقب؟ تواصل مع مكتب خدمات ومعاملات رسمية للإجابة عن استفساراتك وانجاز معاملاتك في الجوازات، المرور، مكتب العمل بأسرع وقت والدفع بعد الإنجاز.',
+  title: 'رقم معقب | تواصل مع مكتب ابو محمد المطيري في السعودية',
+  description: 'هل تبحث عن رقم معقب؟ تواصل مع مكتب ابو محمد المطيري للإجابة عن استفساراتك وانجاز معاملاتك في الجوازات، المرور، مكتب العمل بأسرع وقت والدفع بعد الإنجاز.',
 };
 
 export default function ContactPage() {
@@ -51,7 +51,7 @@ export default function ContactPage() {
 
               <div className="mt-auto">
                 <a
-                  href="https://wa.me/966574135600"
+                  href="https://wa.me/966547147102"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex justify-center items-center gap-3 bg-accent-500 hover:bg-accent-400 text-primary-950 font-bold text-xl px-8 py-5 rounded-sm transition-all duration-200 active:scale-[0.98] select-none shadow-md hover:shadow-lg"
@@ -78,8 +78,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-bold text-primary-900 mb-2">رقم الجوال</h3>
                     <p className="text-gray-500 font-medium mb-3 text-sm">الاتصال متوفر للأمور العاجلة.</p>
-                    <a href="tel:+966574135600" className="text-2xl font-bold text-primary-900 hover:text-accent-500 transition-all duration-200 active:scale-[0.98] select-none py-2 -my-2 inline-block" dir="ltr">
-                      +966 57 413 5600
+                    <a href="tel:+966547147102" className="text-2xl font-bold text-primary-900 hover:text-accent-500 transition-all duration-200 active:scale-[0.98] select-none py-2 -my-2 inline-block" dir="ltr">
+                      +966 54 714 7102
                     </a>
                   </div>
                 </div>

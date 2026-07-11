@@ -39,7 +39,7 @@ export default function FloatingContact() {
 
       {/* Direct Phone Call Button */}
       <motion.a
-        href="tel:+966574135600"
+        href="tel:+966547147102"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.1 }}
@@ -56,7 +56,7 @@ export default function FloatingContact() {
 
       {/* Dynamic WhatsApp Button */}
       <motion.a
-        href="https://wa.me/966574135600"
+        href="https://wa.me/966547147102"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0.8 }}

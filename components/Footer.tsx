@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="relative h-12 w-12 flex items-center justify-center overflow-hidden" id="footer-logo-container">
                 <Image
                   src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png"
-                  alt="شعار مكتب خدمات ومعاملات رسمية"
+                  alt="شعار مكتب ابو محمد المطيري"
                   width={40}
                   height={40}
                   className="object-contain transition-transform duration-300 group-hover:scale-110"
@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col justify-center">
                 <span className="font-black text-xl text-white tracking-wide leading-none group-hover:text-accent-400 transition-colors">
-                  مكتب خدمات ومعاملات رسمية
+                  مكتب ابو محمد المطيري
                 </span>
                 <span className="text-[9px] text-gray-400 font-bold tracking-[0.05em] uppercase mt-1">للخدمات والمعاملات الرسمية</span>
               </div>
@@ -34,7 +34,7 @@ export default function Footer() {
               <div className="flex items-center justify-center w-6 h-5 bg-white rounded-sm grayscale opacity-80 text-xs">
                 🇸🇦
               </div>
-              <p className="text-xs text-gray-500">© {new Date().getFullYear()} مكتب خدمات ومعاملات رسمية. جميع الحقوق محفوظة.</p>
+              <p className="text-xs text-gray-500">© {new Date().getFullYear()} مكتب ابو محمد المطيري. جميع الحقوق محفوظة.</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ export default function Footer() {
              <ul className="space-y-3 text-sm">
                <li className="flex items-center gap-2">
                  <span className="text-accent-500">واتساب:</span>
-                 <a href="https://wa.me/966574135600" className="hover:text-white transition-colors" dir="ltr">+966 57 413 5600</a>
+                 <a href="https://wa.me/966547147102" className="hover:text-white transition-colors" dir="ltr">+966 54 714 7102</a>
                </li>
                <li className="flex items-center gap-2">
                  <span className="text-accent-500">تغطية:</span>

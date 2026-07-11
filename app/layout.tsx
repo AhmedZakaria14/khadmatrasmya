@@ -14,14 +14,14 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL('https://taqeeb-office.com'),
   title: {
-    default: 'مكتب خدمات ومعاملات رسمية | في السعودية',
-    template: '%s | مكتب خدمات ومعاملات رسمية',
+    default: 'مكتب ابو محمد المطيري | في السعودية',
+    template: '%s | مكتب ابو محمد المطيري',
   },
   description: 'مكتب متخصص لإنهاء وتسهيل كافة الخدمات والمعاملات الرسمية والحكومية (الجوازات، مكتب العمل، المرور، التجارة) في المملكة العربية السعودية (الرياض، جدة، وغيرها) بسرعة ودقة. الدفع بعد الإنجاز.',
-  keywords: ['معقب', 'مكتب خدمات ومعاملات رسمية', 'معاملات رسمية', 'معقب جوازات', 'معقب مكتب العمل', 'معقب مرور', 'مكتب خدمات عامة', 'الرياض', 'جدة', 'السعودية', 'استخراج تأشيرات', 'تصاريح', 'تأسيس شركات', 'الدفع بعد الانجاز'],
-  authors: [{ name: 'مكتب خدمات ومعاملات رسمية' }],
-  creator: 'مكتب خدمات ومعاملات رسمية',
-  publisher: 'مكتب خدمات ومعاملات رسمية',
+  keywords: ['معقب', 'مكتب ابو محمد المطيري', 'معاملات رسمية', 'معقب جوازات', 'معقب مكتب العمل', 'معقب مرور', 'مكتب خدمات عامة', 'الرياض', 'جدة', 'السعودية', 'استخراج تأشيرات', 'تصاريح', 'تأسيس شركات', 'الدفع بعد الانجاز'],
+  authors: [{ name: 'مكتب ابو محمد المطيري' }],
+  creator: 'مكتب ابو محمد المطيري',
+  publisher: 'مكتب ابو محمد المطيري',
   formatDetection: {
     email: false,
     address: false,
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     apple: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
   },
   openGraph: {
-    title: 'مكتب خدمات ومعاملات رسمية | لجميع الدوائر الحكومية',
+    title: 'مكتب ابو محمد المطيري | لجميع الدوائر الحكومية',
     description: 'نخدمك في جميع مدن السعودية (الرياض، جدة، الدمام). نراجع الجوازات، مكتب العمل، والمرور. خدمات سريعة ومضمونة والدفع بعد الإنجاز.',
     url: 'https://taqeeb-office.com',
-    siteName: 'مكتب خدمات ومعاملات رسمية',
+    siteName: 'مكتب ابو محمد المطيري',
     images: [
       {
         url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
         width: 800,
         height: 800,
-        alt: 'شعار مكتب خدمات ومعاملات رسمية',
+        alt: 'شعار مكتب ابو محمد المطيري',
       },
     ],
     locale: 'ar_SA',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'أفضل مكتب معاملات في السعودية | مكتب خدمات ومعاملات رسمية',
+    title: 'أفضل مكتب معاملات في السعودية | مكتب ابو محمد المطيري',
     description: 'معاملات الجوازات ومكتب العمل ووزارة التجارة. إنجاز فوري ودفع بعد التأكد من الخدمة.',
     images: ['https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png'],
   },
@@ -68,11 +68,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'مكتب خدمات ومعاملات رسمية',
+    name: 'مكتب ابو محمد المطيري',
     image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
     description: 'مكتب متخصص لإنهاء وتسهيل كافة الخدمات والمعاملات الرسمية والحكومية في السعودية.',
     url: 'https://taqeeb-office.com',
-    telephone: '+966574135600',
+    telephone: '+966547147102',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Riyadh',

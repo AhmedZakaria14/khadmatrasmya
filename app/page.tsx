@@ -10,30 +10,30 @@ export default function Home() {
       <section className="relative bg-[#0d1622] text-white min-h-[90vh] flex items-center justify-center overflow-hidden border-b-4 border-accent-500">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?q=80&w=1920&auto=format&fit=crop" 
-            alt="Kingdom Centre Riyadh"
+            src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783748405/hero-source_fztfaz.jpg" 
+            alt="مكتب ابو محمد المطيري"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-50"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0b131e]/90 via-[#0f1a26]/70 to-[#0b131e]/95 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0b131e]/70 via-[#0f1a26]/40 to-[#0b131e]/80 mix-blend-multiply"></div>
         </div>
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center mt-12 md:mt-20 mb-12">
           <ScrollReveal direction="up" duration={0.8} className="flex flex-col items-center">
               {/* Logo */}
-              <div className="mb-8 w-32 h-32 md:w-44 md:h-44 relative">
+              <div className="mb-8 w-32 h-32 md:w-44 md:h-44 relative bg-white rounded-full p-4 shadow-xl border-4 border-accent-500 overflow-hidden flex items-center justify-center">
                 <Image 
                   src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png" 
-                  alt="شعار مكتب خدمات ومعاملات رسمية"
+                  alt="شعار مكتب ابو محمد المطيري"
                   fill
-                  className="object-contain drop-shadow-2xl"
+                  className="object-contain p-2 md:p-4 drop-shadow-md"
                 />
               </div>
 
               {/* Main Heading */}
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight drop-shadow-xl text-center">
-                مكتب خدمات ومعاملات رسمية
+                مكتب ابو محمد المطيري
               </h1>
               
               {/* Subheading */}
@@ -43,7 +43,7 @@ export default function Home() {
               
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/966574135600"
+                href="https://wa.me/966547147102"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#50b95b] hover:bg-[#40a04a] text-white font-bold text-lg md:text-2xl px-8 md:px-12 py-4 md:py-5 shadow-2xl hover:shadow-green-500/20 transition-all duration-300 active:scale-[0.98] select-none text-center flex justify-center items-center gap-3 rounded-xl mb-16 border border-green-400/30"
@@ -160,7 +160,7 @@ export default function Home() {
              </ScrollReveal>
              <ScrollReveal direction="left" duration={0.8} className="relative">
                 <div className="aspect-[4/5] bg-gray-100 relative overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?q=80&w=1920&auto=format&fit=crop" alt="مكتب خدمات ومعاملات رسمية" fill className="object-cover grayscale opacity-80" />
+                  <Image src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783748405/hero-source_fztfaz.jpg" alt="مكتب ابو محمد المطيري" fill className="object-cover grayscale opacity-80" />
                 </div>
                 <div className="absolute -bottom-8 -left-8 bg-primary-900 p-8 shadow-xl max-w-xs border-r-4 border-accent-500">
                   <div className="text-accent-400 mb-4"><ShieldCheck className="w-10 h-10" /></div>
@@ -181,7 +181,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <a
-                href="https://wa.me/966574135600"
+                href="https://wa.me/966547147102"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-accent-500 hover:bg-accent-400 text-primary-950 font-bold text-base px-8 py-5 rounded-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98] select-none"
@@ -189,11 +189,11 @@ export default function Home() {
                 التواصل المباشر (واتساب)
              </a>
              <a
-                href="tel:+966574135600"
+                href="tel:+966547147102"
                 className="bg-transparent text-white border border-gray-600 hover:border-white font-bold text-base px-8 py-5 rounded-sm transition-all duration-200 active:scale-[0.98] select-none"
                 dir="ltr"
              >
-                +966 57 413 5600
+                +966 54 714 7102
              </a>
           </div>
         </ScrollReveal>

@@ -77,7 +77,7 @@ export default function ServicesClient() {
             الخدمات التي <span className="text-accent-500">نقدمها</span>
           </h1>
           <p className="text-lg text-gray-600 font-medium leading-relaxed">
-            مكتب خدمات ومعاملات رسمية يضع بين يديك خبرة طويلة في إنجاز كافة المعاملات الحكومية والرسمية، مع التزامنا الراسخ بمبدأ الدفع بعد الإنجاز لجميع عملائنا.
+            مكتب ابو محمد المطيري يضع بين يديك خبرة طويلة في إنجاز كافة المعاملات الحكومية والرسمية، مع التزامنا الراسخ بمبدأ الدفع بعد الإنجاز لجميع عملائنا.
           </p>
         </motion.div>
 
@@ -133,7 +133,7 @@ export default function ServicesClient() {
 
                     <div className="mt-10 pt-8 border-t border-gray-200">
                       <a 
-                        href={`https://wa.me/966574135600?text=استفسار بخصوص: ${service.title}`}
+                        href={`https://wa.me/966547147102?text=استفسار بخصوص: ${service.title}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary-900 font-bold hover:text-accent-500 transition-all py-3 -my-3 active:scale-[0.98] select-none group/link"
@@ -178,7 +178,7 @@ export default function ServicesClient() {
               </div>
               <h3 className="text-2xl font-bold text-primary-900">تم استلام طلبك بنجاح!</h3>
               <p className="text-gray-600 max-w-md mx-auto leading-relaxed">
-                شكراً لثقتك بمكتب خدمات ومعاملات رسمية. لقد تم تسجيل طلب الاستشارة لخدمة <span className="font-extrabold text-primary-900">«{services.find(s => s.id === serviceType)?.title || 'خدمة أخرى'}»</span> باسم <span className="font-extrabold text-primary-900">{name}</span> ورقم الجوال <span className="font-bold">{phone}</span>. سنتصل بك قريباً جداً.
+                شكراً لثقتك بمكتب ابو محمد المطيري. لقد تم تسجيل طلب الاستشارة لخدمة <span className="font-extrabold text-primary-900">«{services.find(s => s.id === serviceType)?.title || 'خدمة أخرى'}»</span> باسم <span className="font-extrabold text-primary-900">{name}</span> ورقم الجوال <span className="font-bold">{phone}</span>. سنتصل بك قريباً جداً.
               </p>
               <button 
                 type="button"
@@ -277,7 +277,7 @@ export default function ServicesClient() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-5">
                  <a
-                    href="https://wa.me/966574135600"
+                    href="https://wa.me/966547147102"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-accent-500 hover:bg-accent-400 text-primary-950 font-bold text-base md:text-lg px-8 py-5 rounded-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98] select-none"

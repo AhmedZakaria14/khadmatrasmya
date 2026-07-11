@@ -25,7 +25,7 @@ export default function Navbar() {
             <div className="relative h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0 flex items-center justify-center overflow-hidden" id="logo-image-container">
               <Image
                 src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png"
-                alt="شعار مكتب خدمات ومعاملات رسمية"
+                alt="شعار مكتب ابو محمد المطيري"
                 width={40}
                 height={40}
                 className="object-contain transition-transform duration-300 group-hover:scale-110 mix-blend-multiply w-full h-full"
@@ -35,7 +35,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col justify-center min-w-0">
               <span className="font-black text-sm sm:text-xl text-primary-900 leading-tight tracking-wide group-hover:text-accent-600 transition-colors truncate">
-                مكتب خدمات ومعاملات رسمية
+                مكتب ابو محمد المطيري
               </span>
               <p className="text-[9px] sm:text-[10px] text-gray-400 font-bold tracking-[0.1em] uppercase mt-0.5 truncate hidden sm:block">للخدمات والمعاملات الرسمية</p>
             </div>
@@ -60,11 +60,11 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center">
            <a
-            href="https://wa.me/966574135600"
+            href="https://wa.me/966547147102"
             className="bg-primary-950 hover:bg-primary-900 text-white px-6 py-2.5 rounded-sm text-sm font-bold flex items-center gap-2 transition-all duration-200 active:scale-[0.98] select-none border border-primary-900 shadow-sm"
             dir="ltr"
           >
-            <span>واتساب: +966 57 413 5600</span>
+            <span>واتساب: +966 54 714 7102</span>
           </a>
         </div>
 
@@ -99,11 +99,11 @@ export default function Navbar() {
             ))}
             <div className="mt-6 pt-4 border-t border-gray-100">
               <a
-                href="https://wa.me/966574135600"
+                href="https://wa.me/966547147102"
                 className="flex items-center justify-center gap-2 w-full bg-primary-900 text-white px-5 py-3.5 rounded-sm font-bold hover:bg-primary-800 transition-all duration-200 active:scale-[0.98] select-none shadow-sm"
                 dir="ltr"
               >
-                <span>+966 57 413 5600</span>
+                <span>+966 54 714 7102</span>
               </a>
             </div>
           </div>
