@@ -2,28 +2,89 @@
 
 @theme {
   --font-sans: var(--font-tajawal), ui-sans-serif, system-ui, sans-serif;
-  --color-primary-50: #f4f6f8;
-  --color-primary-100: #e2e7ec;
-  --color-primary-200: #c5d0db;
-  --color-primary-300: #a8b8c9;
-  --color-primary-400: #8aa0b7;
-  --color-primary-500: #6d88a4;
-  --color-primary-600: #576d83;
-  --color-primary-700: #415262;
-  --color-primary-800: #2b3642;
-  --color-primary-900: #161b21;
-  --color-primary-950: #0b0e10;
-  --color-accent-50: #fbf9f2;
-  --color-accent-100: #f8f4e6;
-  --color-accent-200: #eee3c1;
-  --color-accent-300: #e5d19c;
-  --color-accent-400: #dbc077;
-  --color-accent-500: #d1af52;
-  --color-accent-600: #b59542;
-  --color-accent-700: #937833;
+  --color-primary-50: #effbfb;
+  --color-primary-100: #d6f3f4;
+  --color-primary-200: #afe7e9;
+  --color-primary-300: #78d4d8;
+  --color-primary-400: #3db9c0;
+  --color-primary-500: #149ca5;
+  --color-primary-600: #0b828b;
+  --color-primary-700: #0b6870;
+  --color-primary-800: #0c535a;
+  --color-primary-900: #083f46;
+  --color-primary-950: #052f35;
+  --color-accent-50: #f1fbf1;
+  --color-accent-100: #dff5df;
+  --color-accent-200: #c0eac0;
+  --color-accent-300: #8ed98f;
+  --color-accent-400: #63c765;
+  --color-accent-500: #50b95b;
+  --color-accent-600: #379a42;
+  --color-accent-700: #2e7a37;
 }
 
 html, body {
   font-family: var(--font-sans);
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #083f46;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #149ca5;
+  color: #ffffff;
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(20, 156, 165, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 156, 165, 0.045) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(4, 38, 43, 0.38) 0%, rgba(5, 47, 53, 0.7) 56%, rgba(4, 34, 39, 0.88) 100%),
+    linear-gradient(90deg, rgba(5, 47, 53, 0.28), rgba(5, 47, 53, 0.08));
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #149ca5;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.section-kicker::before {
+  content: "";
+  width: 2rem;
+  height: 2px;
+  border-radius: 999px;
+  background: #50b95b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

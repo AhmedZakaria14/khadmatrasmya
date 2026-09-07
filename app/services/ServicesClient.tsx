@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, ShieldCheck, FileBadge, Globe, ArrowLeft, ChevronLeft, Search, User, Briefcase, Phone } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, FileBadge, Globe, ChevronLeft, Search, User, Briefcase, Phone } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -28,7 +28,7 @@ export default function ServicesClient() {
     {
       id: 'marriage',
       title: 'تصريحات وموافقات الزواج',
-      icon: <FileBadge className="h-10 w-10 text-primary-900 relative z-10" />,
+      icon: <FileBadge className="relative z-10 h-9 w-9 text-primary-500" />,
       description: 'نقدم خدماتنا في استخراج كافة التصريحات الرسمية وموافقات الزواج لجميع الحالات بأعلى معايير الدقة.',
       items: [
         { label: 'استخراج تصريح زواج سعودي من أجنبية (مقيمة)', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540198/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_%D9%85%D9%86_%D9%85%D9%82%D9%8A%D9%85%D8%A9_ivibn2.jpg' },
@@ -40,7 +40,7 @@ export default function ServicesClient() {
     {
       id: 'citizenship',
       title: 'خدمات التجنيس النوعية',
-      icon: <Globe className="h-10 w-10 text-primary-900 relative z-10" />,
+      icon: <Globe className="relative z-10 h-9 w-9 text-primary-500" />,
       description: 'نتابع معاملات التجنيس وننهي الإجراءات النظامية للحالات المستوفية للشروط وفقاً للأنظمة المعتمدة.',
       items: [
         { label: 'تجنيس الكفاءات (أطباء)', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540194/%D8%AA%D8%AC%D9%86%D9%8A%D8%B3_%D8%AF%D9%83%D8%AA%D9%88%D8%B1_c1mcpf.jpg' },
@@ -52,7 +52,7 @@ export default function ServicesClient() {
     {
       id: 'visas',
       title: 'خدمات التأشيرات والمقيمين',
-      icon: <ShieldCheck className="h-10 w-10 text-primary-900 relative z-10" />,
+      icon: <ShieldCheck className="relative z-10 h-9 w-9 text-primary-500" />,
       description: 'ننجز كافة معاملات الجوازات والتأشيرات للشركات والمؤسسات والأفراد بكفاءة عالية.',
       items: [
         { label: 'استخراج التأشيرات المهنية للمؤسسات', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540172/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_%D9%85%D9%87%D9%86%D9%8A%D8%A9_igayz2.jpg' },
@@ -73,8 +73,9 @@ export default function ServicesClient() {
     <>
         {/* Page Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-center mb-12 max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-black text-primary-900 mb-6 tracking-tight">
-            الخدمات التي <span className="text-accent-500">نقدمها</span>
+          <span className="section-kicker mb-6">خدماتنا المتخصصة</span>
+          <h1 className="mb-6 text-4xl font-black tracking-tight text-primary-900 md:text-5xl">
+            الخدمات التي <span className="text-primary-500">نقدمها</span>
           </h1>
           <p className="text-lg text-gray-600 font-medium leading-relaxed">
             مكتب ابو محمد المطيري يضع بين يديك خبرة طويلة في إنجاز كافة المعاملات الحكومية والرسمية، مع التزامنا الراسخ بمبدأ الدفع بعد الإنجاز لجميع عملائنا.
@@ -82,13 +83,14 @@ export default function ServicesClient() {
         </motion.div>
 
         {/* Search Bar */}
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="mb-16 max-w-xl mx-auto relative">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="relative mx-auto mb-16 max-w-xl">
             <input
                 type="text"
                 placeholder="ابحث عن خدمة أو إجراء..."
+                aria-label="البحث في الخدمات"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full px-6 py-4 rounded-sm border border-gray-200 focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none text-right font-medium pr-14"
+                className="w-full rounded-2xl border border-primary-100 bg-white px-6 py-4 pr-14 text-right font-medium shadow-[0_10px_35px_rgba(8,63,70,.06)] outline-none transition focus:border-primary-400 focus:ring-2 focus:ring-primary-100"
             />
             <Search className="absolute left-4 top-4 text-gray-400 h-6 w-6" />
         </motion.div>
@@ -102,11 +104,11 @@ export default function ServicesClient() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative group bg-gray-50 border border-gray-200"
+                className="group relative overflow-hidden rounded-[30px] border border-primary-100 bg-white shadow-[0_18px_55px_rgba(8,63,70,.07)]"
               >
                 <div className="p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-start z-10">
                   <div className="flex-shrink-0">
-                    <div className="bg-white w-24 h-24 flex items-center justify-center border border-gray-200 shadow-sm">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-50 ring-1 ring-primary-100 md:h-24 md:w-24">
                       {service.icon}
                     </div>
                   </div>
@@ -116,10 +118,10 @@ export default function ServicesClient() {
                     <p className="text-gray-600 text-lg mb-8 font-medium leading-relaxed max-w-3xl">{service.description}</p>
                     
                     <div className="grid sm:grid-cols-2 gap-y-5 gap-x-8">
-                      {service.items.map((item, i) => (
-                        <div key={i} className="flex flex-col gap-4 border border-gray-100 rounded-sm overflow-hidden bg-white hover:border-primary-900 transition-colors">
-                          <div className="relative aspect-video bg-gray-100">
-                            <Image src={item.image} alt={item.label} fill className="object-cover" />
+                      {service.items.map((item) => (
+                        <div key={item.label} className="flex flex-col gap-4 overflow-hidden rounded-2xl border border-primary-100 bg-white transition duration-300 hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-lg">
+                          <div className="relative aspect-video bg-primary-50">
+                            <Image src={item.image} alt={item.label} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
                           </div>
                           <div className="p-4 flex items-start gap-4">
                             <div className="shrink-0 mt-1">
@@ -136,7 +138,7 @@ export default function ServicesClient() {
                         href={`https://wa.me/966547147102?text=استفسار بخصوص: ${service.title}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-900 font-bold hover:text-accent-500 transition-all py-3 -my-3 active:scale-[0.98] select-none group/link"
+                        className="group/link -my-3 inline-flex items-center gap-2 rounded-xl bg-primary-50 px-5 py-3 font-bold text-primary-800 transition-all hover:bg-primary-500 hover:text-white active:scale-[0.98]"
                       >
                         طلب استشارة مجانية لهذا القسم
                         <ChevronLeft className="w-5 h-5 group-hover/link:-translate-x-1 transition-transform" />
@@ -158,9 +160,9 @@ export default function ServicesClient() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-24 max-w-3xl mx-auto bg-gray-50 border border-gray-200 p-8 md:p-12 relative"
+          className="relative mx-auto mt-24 max-w-3xl overflow-hidden rounded-[30px] border border-primary-100 bg-white p-8 shadow-[0_18px_55px_rgba(8,63,70,.08)] md:p-12"
         >
-          <div className="absolute top-0 right-0 w-2 h-full bg-accent-500"></div>
+          <div className="absolute top-0 right-0 h-full w-2 bg-primary-500"></div>
           
           <div className="mb-8">
             <h2 className="text-3xl font-extrabold text-primary-900 mb-3 tracking-tight">طلب إعادة اتصال واستشارة</h2>
@@ -171,9 +173,9 @@ export default function ServicesClient() {
             <motion.div 
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="bg-white border border-accent-500/30 p-8 text-center rounded-sm space-y-6"
+              className="space-y-6 rounded-2xl border border-primary-100 bg-primary-50/60 p-8 text-center"
             >
-              <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto text-accent-600">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent-100 text-accent-600">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold text-primary-900">تم استلام طلبك بنجاح!</h3>
@@ -206,7 +208,7 @@ export default function ServicesClient() {
                       placeholder="أدخل اسمك الكريم"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      className="w-full px-5 py-3.5 bg-white border border-gray-200 focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none text-right font-medium pr-12 rounded-sm"
+                      className="w-full rounded-xl border border-primary-100 bg-primary-50/30 px-5 py-3.5 pr-12 text-right font-medium outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100"
                     />
                     <User className="absolute right-4 top-4 text-gray-400 h-5 w-5" />
                   </div>
@@ -223,7 +225,7 @@ export default function ServicesClient() {
                       pattern="05[0-9]{8}"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      className="w-full px-5 py-3.5 bg-white border border-gray-200 focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none text-left font-medium pr-12 rounded-sm"
+                      className="w-full rounded-xl border border-primary-100 bg-primary-50/30 px-5 py-3.5 pr-12 text-left font-medium outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100"
                       dir="ltr"
                     />
                     <Phone className="absolute right-4 top-4 text-gray-400 h-5 w-5" />
@@ -238,7 +240,7 @@ export default function ServicesClient() {
                   <select
                     value={serviceType}
                     onChange={(e) => setServiceType(e.target.value)}
-                    className="w-full px-5 py-3.5 bg-white border border-gray-200 focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none text-right font-medium pr-12 rounded-sm appearance-none cursor-pointer"
+                    className="w-full cursor-pointer appearance-none rounded-xl border border-primary-100 bg-primary-50/30 px-5 py-3.5 pr-12 text-right font-medium outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100"
                   >
                     {services.map((s) => (
                       <option key={s.id} value={s.id}>{s.title}</option>
@@ -253,7 +255,7 @@ export default function ServicesClient() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary-900 hover:bg-primary-950 text-white font-bold py-4 rounded-sm transition-all duration-200 active:scale-[0.98] select-none flex items-center justify-center gap-2 disabled:bg-gray-400"
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary-500 py-4 font-bold text-white transition-all duration-200 hover:bg-primary-600 active:scale-[0.98] disabled:bg-gray-400"
               >
                 {isSubmitting ? (
                   <span>جاري تسجيل طلبك...</span>
@@ -269,7 +271,7 @@ export default function ServicesClient() {
         </motion.div>
 
         {/* CTA */}
-        <div className="mt-24 bg-primary-950 p-10 md:p-16 lg:p-20 text-center shadow-2xl relative overflow-hidden border-t-4 border-accent-500">
+        <div className="relative mt-24 overflow-hidden rounded-[32px] bg-primary-900 p-10 text-center shadow-2xl md:p-16 lg:p-20">
            <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6">هل تبحث عن خدمة غير مدرجة؟</h2>
               <p className="text-gray-300 text-lg md:text-xl mb-12 font-medium leading-relaxed">
@@ -280,13 +282,13 @@ export default function ServicesClient() {
                     href="https://wa.me/966547147102"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-accent-500 hover:bg-accent-400 text-primary-950 font-bold text-base md:text-lg px-8 py-5 rounded-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98] select-none"
+                    className="rounded-xl bg-accent-500 px-8 py-5 text-base font-bold text-white shadow-md transition-all duration-200 hover:bg-accent-600 hover:shadow-lg active:scale-[0.98] md:text-lg"
                  >
                     تواصل معنا عبر الواتساب
                  </a>
                  <Link
                     href="/contact"
-                    className="bg-transparent hover:bg-white/10 text-white border border-white/30 font-bold text-base md:text-lg px-8 py-5 rounded-sm transition-all duration-200 active:scale-[0.98] select-none"
+                    className="rounded-xl border border-white/30 bg-transparent px-8 py-5 text-base font-bold text-white transition-all duration-200 hover:bg-white/10 active:scale-[0.98] md:text-lg"
                  >
                     انتقل لصفحة التواصل
                  </Link>

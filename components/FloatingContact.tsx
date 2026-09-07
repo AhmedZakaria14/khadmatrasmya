@@ -11,7 +11,7 @@ export default function FloatingContact() {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -20,7 +20,7 @@ export default function FloatingContact() {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex flex-col items-center gap-3" dir="ltr">
+    <div className="fixed bottom-5 left-4 sm:bottom-7 sm:left-7 z-50 flex flex-col items-center gap-3" dir="ltr">
       {/* Scroll to Top Button */}
       <AnimatePresence>
         {showScrollTop && (
@@ -29,7 +29,7 @@ export default function FloatingContact() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 10 }}
             onClick={scrollToTop}
-            className="w-12 h-12 bg-white text-primary-990 border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors cursor-pointer group"
+            className="w-11 h-11 rounded-full bg-white border border-primary-100 shadow-lg flex items-center justify-center hover:bg-primary-50 transition-colors cursor-pointer group"
             title="رجوع لأعلى الصفحة"
           >
             <ChevronUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform text-primary-900" />
@@ -45,7 +45,7 @@ export default function FloatingContact() {
         transition={{ delay: 0.1 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 bg-primary-900 text-white shadow-lg flex items-center justify-center hover:bg-primary-950 transition-colors border border-primary-800 relative group"
+        className="w-12 h-12 rounded-full bg-primary-600 text-white shadow-lg flex items-center justify-center hover:bg-primary-700 transition-colors relative group"
         title="اتصل بنا الآن"
       >
         <span className="absolute right-full mr-3 bg-primary-950 text-white text-xs font-bold py-1.5 px-3 whitespace-nowrap pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md">
@@ -64,7 +64,7 @@ export default function FloatingContact() {
         transition={{ delay: 0.2 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 bg-[#25D366] text-white shadow-lg flex items-center justify-center hover:bg-[#20ba5a] transition-colors relative group"
+        className="w-16 h-16 rounded-full bg-[#25D366] text-white shadow-[0_12px_32px_rgba(37,211,102,.38)] ring-4 ring-white flex items-center justify-center hover:bg-[#20ba5a] transition-colors relative group"
         title="تواصل معنا عبر واتساب"
       >
         {/* Radar subtle pulse background */}

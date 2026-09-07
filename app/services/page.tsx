@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="bg-white min-h-screen py-16 lg:py-24 font-sans">
+    <div className="soft-grid min-h-screen bg-primary-50/35 py-16 font-sans lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ServicesClient />
       </div>

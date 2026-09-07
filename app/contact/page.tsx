@@ -8,15 +8,15 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-white min-h-screen py-16 lg:py-24 font-sans overflow-hidden">
+    <div className="soft-grid min-h-screen overflow-hidden bg-primary-50/40 py-16 font-sans lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <ScrollReveal direction="up" duration={0.6} className="text-center mb-16 max-w-3xl mx-auto">
-          <span className="inline-block border-b-2 border-accent-500 text-primary-900 text-xs font-bold pb-1 uppercase tracking-widest mb-6">
+          <span className="section-kicker mb-6">
             دعم ومساندة
           </span>
-          <h1 className="text-4xl md:text-5xl font-black text-primary-900 mb-6 tracking-tight">ابقى على تواصل <span className="text-accent-500">معنا</span></h1>
+          <h1 className="mb-6 text-4xl font-black tracking-tight text-primary-900 md:text-5xl">ابقى على تواصل <span className="text-primary-500">معنا</span></h1>
           <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
             فريق الدعم وبدء المعاملات مستعد للرد على استفساراتكم والبدء في إنجاز أعمالكم فوراً. نحن دائماً في خدمتكم.
           </p>
@@ -25,17 +25,17 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-12 gap-8 items-start">
           
           {/* Quick Contact Box */}
-          <ScrollReveal direction="right" duration={0.8} className="lg:col-span-12 xl:col-span-7 bg-primary-950 p-10 md:p-14 text-white shadow-2xl relative order-last lg:order-first border-r-4 border-accent-500">
+          <ScrollReveal direction="right" duration={0.8} className="relative order-last rounded-[30px] bg-primary-900 p-8 text-white shadow-2xl md:p-14 lg:order-first lg:col-span-12 xl:col-span-7">
             <div className="relative z-10 flex flex-col h-full">
-              <div className="bg-primary-900 w-16 h-16 rounded-sm flex items-center justify-center mb-8 border border-primary-800">
-                <MessageCircle className="h-8 w-8 text-accent-500" />
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/15">
+                <MessageCircle className="h-8 w-8 text-accent-400" />
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-5 leading-tight text-white">راسلنا مباشرة عبر واتساب للبدء فوراً!</h2>
               <p className="text-gray-300 text-lg mb-10 leading-relaxed max-w-lg">
                 أسرع طريقة لإنجاز معاملتك هي بتوضيح تفاصيلها لممثلينا عبر تطبيق واتساب. نحن نرد بسرعة ونبدأ الإجراءات بمجرد الاتفاق.
               </p>
               
-              <div className="bg-primary-900 rounded-sm p-6 border border-primary-800 mb-10 space-y-5">
+              <div className="mb-10 space-y-5 rounded-2xl border border-white/10 bg-white/7 p-6">
                  <div className="flex items-center justify-between border-b border-primary-800 pb-5">
                     <span className="text-gray-300 font-medium">معدل الاستجابة السريع:</span>
                     <span className="font-bold text-primary-950 bg-accent-400 px-4 py-1.5 rounded-sm text-sm">فوري</span>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                   href="https://wa.me/966547147102"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex justify-center items-center gap-3 bg-accent-500 hover:bg-accent-400 text-primary-950 font-bold text-xl px-8 py-5 rounded-sm transition-all duration-200 active:scale-[0.98] select-none shadow-md hover:shadow-lg"
+                  className="flex w-full items-center justify-center gap-3 rounded-xl bg-accent-500 px-8 py-5 text-xl font-bold text-white shadow-md transition-all duration-200 hover:bg-accent-600 hover:shadow-lg active:scale-[0.98]"
                 >
                   <Phone className="h-6 w-6" />
                   بدء المحادثة الآن
@@ -70,10 +70,10 @@ export default function ContactPage() {
             </ScrollReveal>
             
             <ScrollReveal direction="left" delay={0.1} duration={0.8}>
-              <div className="bg-white p-8 border border-gray-200 shadow-sm hover:border-primary-900 transition-colors group animate-none">
+              <div className="group rounded-[24px] border border-primary-100 bg-white p-8 shadow-[0_14px_45px_rgba(8,63,70,.06)] transition duration-300 hover:-translate-y-1 hover:border-primary-300">
                 <div className="flex items-start gap-5">
-                  <div className="bg-gray-50 p-4 shrink-0 border border-gray-100">
-                    <Phone className="h-7 w-7 text-primary-900" />
+                  <div className="shrink-0 rounded-2xl bg-primary-50 p-4">
+                    <Phone className="h-7 w-7 text-primary-500" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary-900 mb-2">رقم الجوال</h3>
@@ -87,10 +87,10 @@ export default function ContactPage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" delay={0.2} duration={0.8}>
-              <div className="bg-white p-8 border border-gray-200 shadow-sm hover:border-primary-900 transition-colors">
+              <div className="rounded-[24px] border border-primary-100 bg-white p-8 shadow-[0_14px_45px_rgba(8,63,70,.06)] transition duration-300 hover:-translate-y-1 hover:border-primary-300">
                 <div className="flex items-start gap-5">
-                  <div className="bg-gray-50 p-4 shrink-0 border border-gray-100">
-                    <MapPin className="h-7 w-7 text-primary-900" />
+                  <div className="shrink-0 rounded-2xl bg-primary-50 p-4">
+                    <MapPin className="h-7 w-7 text-primary-500" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary-900 mb-2">التغطية الجغرافية</h3>
@@ -101,10 +101,10 @@ export default function ContactPage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" delay={0.3} duration={0.8}>
-              <div className="bg-white p-8 border border-gray-200 shadow-sm hover:border-primary-900 transition-colors">
+              <div className="rounded-[24px] border border-primary-100 bg-white p-8 shadow-[0_14px_45px_rgba(8,63,70,.06)] transition duration-300 hover:-translate-y-1 hover:border-primary-300">
                 <div className="flex items-start gap-5">
-                  <div className="bg-gray-50 p-4 shrink-0 border border-gray-100">
-                    <Clock className="h-7 w-7 text-primary-900" />
+                  <div className="shrink-0 rounded-2xl bg-primary-50 p-4">
+                    <Clock className="h-7 w-7 text-primary-500" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary-900 mb-2">أوقات العمل</h3>
