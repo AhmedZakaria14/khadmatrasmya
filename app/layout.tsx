@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
-        href: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
+        url: '/images/brand/logo.png',
+        href: '/images/brand/logo.png',
       },
     ],
-    shortcut: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
-    apple: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
+    shortcut: '/images/brand/logo.png',
+    apple: '/images/brand/logo.png',
   },
   openGraph: {
     title: 'مكتب ابو محمد المطيري | لجميع الدوائر الحكومية',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'مكتب ابو محمد المطيري',
     images: [
       {
-        url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
+        url: '/images/brand/logo.png',
         width: 800,
         height: 800,
         alt: 'شعار مكتب ابو محمد المطيري',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'أفضل مكتب معاملات في السعودية | مكتب ابو محمد المطيري',
     description: 'معاملات الجوازات ومكتب العمل ووزارة التجارة. إنجاز فوري ودفع بعد التأكد من الخدمة.',
-    images: ['https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png'],
+    images: ['/images/brand/logo.png'],
   },
   alternates: {
     canonical: 'https://taqeeb-office.com',
@@ -69,7 +69,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'مكتب ابو محمد المطيري',
-    image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png',
+    image: 'https://taqeeb-office.com/images/brand/logo.png',
     description: 'مكتب متخصص لإنهاء وتسهيل كافة الخدمات والمعاملات الرسمية والحكومية في السعودية.',
     url: 'https://taqeeb-office.com',
     telephone: '+966547147102',

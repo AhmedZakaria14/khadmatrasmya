@@ -11,12 +11,11 @@ export default function Footer() {
             <Link href="/" className="mb-5 flex items-center gap-3 group" id="footer-logo-link">
               <div className="relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border border-primary-100 bg-white" id="footer-logo-container">
                 <Image
-                  src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png"
+                  src="/images/brand/logo.png"
                   alt="شعار مكتب ابو محمد المطيري"
                   width={64}
                   height={64}
                   className="h-full w-full object-contain p-1 transition-transform duration-300 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
                   id="footer-logo-image"
                 />
               </div>

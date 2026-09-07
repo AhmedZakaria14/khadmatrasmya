@@ -68,7 +68,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col font-sans">
       <section className="relative flex min-h-[calc(100svh-76px)] items-center justify-center overflow-hidden bg-primary-950 text-white lg:min-h-[calc(100svh-88px)]">
         <Image
-          src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783748405/hero-source_fztfaz.jpg"
+          src="/images/sections/hero-saudi-office.webp"
           alt="مكتب ابو محمد المطيري"
           fill
           sizes="100vw"
@@ -82,7 +82,7 @@ export default function Home() {
           <ScrollReveal direction="up" duration={0.8} className="flex flex-col items-center">
             <div className="relative mb-7 h-28 w-28 overflow-hidden rounded-full bg-white p-2 shadow-[0_16px_50px_rgba(0,0,0,.25)] ring-4 ring-white/30 sm:h-36 sm:w-36">
               <Image
-                src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png"
+                src="/images/brand/logo.png"
                 alt="شعار مكتب ابو محمد المطيري"
                 fill
                 sizes="144px"
@@ -209,7 +209,7 @@ export default function Home() {
           <ScrollReveal direction="right" duration={0.8} className="relative">
             <div className="relative min-h-[430px] overflow-hidden rounded-[32px] bg-primary-100 sm:min-h-[560px]">
               <Image
-                src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783748405/hero-source_fztfaz.jpg"
+                src="/images/sections/about-saudi-team.webp"
                 alt="خدمات مكتب ابو محمد المطيري"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

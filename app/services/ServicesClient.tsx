@@ -31,10 +31,10 @@ export default function ServicesClient() {
       icon: <FileBadge className="relative z-10 h-9 w-9 text-primary-500" />,
       description: 'نقدم خدماتنا في استخراج كافة التصريحات الرسمية وموافقات الزواج لجميع الحالات بأعلى معايير الدقة.',
       items: [
-        { label: 'استخراج تصريح زواج سعودي من أجنبية (مقيمة)', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540198/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_%D9%85%D9%86_%D9%85%D9%82%D9%8A%D9%85%D8%A9_ivibn2.jpg' },
-        { label: 'استخراج موافقة زواج من أجنبي غير مقيم', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540198/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_%D8%A7%D8%AC%D9%86%D8%A8%D9%89_%D8%BA%D9%8A%D8%B1_%D9%85%D9%82%D9%8A%D9%85_ev9msz.jpg' },
-        { label: 'استخراج موافقة زواج (مفتوح)', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540196/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_%D9%85%D9%81%D8%AA%D9%88%D8%AD_v2shon.jpg' },
-        { label: 'استخراج موافقة زواج سعودية من أجنبي', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540197/%D8%B3%D8%B9%D9%88%D8%AF%D9%89_%D9%85%D9%86_%D8%A7%D8%AC%D9%86%D8%A8%D9%8A%D8%A9%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_ppcg0z.jpg' }
+        { label: 'استخراج تصريح زواج سعودي من أجنبية (مقيمة)', image: '/images/services/marriage-resident.webp' },
+        { label: 'استخراج موافقة زواج من أجنبي غير مقيم', image: '/images/services/marriage-nonresident.webp' },
+        { label: 'استخراج موافقة زواج (مفتوح)', image: '/images/services/marriage-open-approval.webp' },
+        { label: 'استخراج موافقة زواج سعودية من أجنبي', image: '/images/services/marriage-saudi-woman.webp' }
       ]
     },
     {
@@ -43,10 +43,10 @@ export default function ServicesClient() {
       icon: <Globe className="relative z-10 h-9 w-9 text-primary-500" />,
       description: 'نتابع معاملات التجنيس وننهي الإجراءات النظامية للحالات المستوفية للشروط وفقاً للأنظمة المعتمدة.',
       items: [
-        { label: 'تجنيس الكفاءات (أطباء)', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540194/%D8%AA%D8%AC%D9%86%D9%8A%D8%B3_%D8%AF%D9%83%D8%AA%D9%88%D8%B1_c1mcpf.jpg' },
-        { label: 'تجنيس المستثمرين ورجال الأعمال', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540196/%D8%AA%D8%AC%D9%86%D9%8A%D8%B3_%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1_apdxd3.jpg' },
-        { label: 'تجنيس زوجة مواطن', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540183/%D8%AA%D8%AC%D9%86%D9%8A%D8%B3_%D8%B2%D9%88%D8%AC%D8%A9_%D9%85%D9%88%D8%A7%D8%B7%D9%86_lgkuve.jpg' },
-        { label: 'تجنيس أبناء المواطنات ومواليد المملكة', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540196/%D8%AA%D8%AC%D9%86%D9%8A%D8%B3_%D9%85%D9%88%D8%A7%D9%84%D9%8A%D8%AF_ckuram.jpg' }
+        { label: 'تجنيس الكفاءات (أطباء)', image: '/images/services/citizenship-doctors.webp' },
+        { label: 'تجنيس المستثمرين ورجال الأعمال', image: '/images/services/citizenship-investors.webp' },
+        { label: 'تجنيس زوجة مواطن', image: '/images/services/citizenship-wife.webp' },
+        { label: 'تجنيس أبناء المواطنات ومواليد المملكة', image: '/images/services/citizenship-children.webp' }
       ]
     },
     {
@@ -55,10 +55,10 @@ export default function ServicesClient() {
       icon: <ShieldCheck className="relative z-10 h-9 w-9 text-primary-500" />,
       description: 'ننجز كافة معاملات الجوازات والتأشيرات للشركات والمؤسسات والأفراد بكفاءة عالية.',
       items: [
-        { label: 'استخراج التأشيرات المهنية للمؤسسات', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540172/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC_%D9%85%D9%87%D9%86%D9%8A%D8%A9_igayz2.jpg' },
-        { label: 'استخراج تأشيرات فردية عمالية', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540179/%D8%AA%D8%A7%D8%B4%D9%8A%D8%B1%D8%A7%D8%AA_%D9%81%D8%B1%D8%AF%D9%8A%D8%A9_i6bggs.jpg' },
-        { label: 'تحويل تأشيرة الزيارة إلى إقامة نظامية', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540180/%D8%AA%D8%AD%D9%88%D9%8A%D9%84_%D8%A7%D9%84%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9_bkzeri.jpg' },
-        { label: 'استخراج موافقة لزوج مقيم', image: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540195/%D8%AA%D8%AC%D9%86%D9%8A%D8%B3_%D8%B2%D9%88%D8%AC_rjnr7i.jpg' }
+        { label: 'استخراج التأشيرات المهنية للمؤسسات', image: '/images/services/visa-professional.webp' },
+        { label: 'استخراج تأشيرات فردية عمالية', image: '/images/services/visa-individual.webp' },
+        { label: 'تحويل تأشيرة الزيارة إلى إقامة نظامية', image: '/images/services/visit-to-residency.webp' },
+        { label: 'استخراج موافقة لزوج مقيم', image: '/images/services/resident-husband-approval.webp' }
       ]
     }
   ];

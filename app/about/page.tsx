@@ -40,7 +40,7 @@ export default function AboutPage() {
           </ScrollReveal>
           
           <ScrollReveal direction="left" duration={0.8} className="relative h-full overflow-hidden rounded-[30px] bg-primary-900 p-10 text-white shadow-[0_18px_55px_rgba(8,63,70,.18)] md:col-span-12 md:p-14 lg:col-span-5">
-            <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781540171/aboutUS_a2o8hn.jpg')] opacity-5 bg-cover mix-blend-overlay grayscale"></div>
+            <div className="absolute inset-0 bg-[url('/images/sections/about-saudi-team.webp')] bg-cover bg-center opacity-10 mix-blend-overlay grayscale"></div>
             <div className="relative z-10 h-full flex flex-col justify-center">
               <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/15">
                 <Building className="h-8 w-8 text-accent-400" />

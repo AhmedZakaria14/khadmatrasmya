@@ -24,12 +24,11 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group min-w-0" id="navbar-logo-link">
             <div className="relative h-11 w-11 sm:h-14 sm:w-14 flex-shrink-0 flex items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-primary-100" id="logo-image-container">
               <Image
-                src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1783701426/%D9%85%D9%83%D8%AA%D8%A8_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D9%88%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA_%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_xijyad.png"
+                src="/images/brand/logo.png"
                 alt="شعار مكتب ابو محمد المطيري"
                 width={56}
                 height={56}
                 className="object-contain p-1 transition-transform duration-300 group-hover:scale-105 mix-blend-multiply w-full h-full"
-                referrerPolicy="no-referrer"
                 id="navbar-logo-image"
               />
             </div>
