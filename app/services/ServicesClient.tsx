@@ -75,7 +75,7 @@ export default function ServicesClient() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-center mb-12 max-w-3xl mx-auto">
           <span className="section-kicker mb-6">خدماتنا المتخصصة</span>
           <h1 className="mb-6 text-4xl font-black tracking-tight text-primary-900 md:text-5xl">
-            الخدمات التي <span className="text-primary-500">نقدمها</span>
+            خدمات تصاريح الزواج <span className="text-primary-500">والتجنيس والتأشيرات</span>
           </h1>
           <p className="text-lg text-gray-600 font-medium leading-relaxed">
             مكتب ابو محمد المطيري يضع بين يديك خبرة طويلة في إنجاز كافة المعاملات الحكومية والرسمية، مع التزامنا الراسخ بمبدأ الدفع بعد الإنجاز لجميع عملائنا.

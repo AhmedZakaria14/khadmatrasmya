@@ -1,22 +1,40 @@
 import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { createPageMetadata, SITE } from '@/lib/seo';
 
-export const metadata = {
-  title: 'رقم معقب | تواصل مع مكتب ابو محمد المطيري في السعودية',
-  description: 'هل تبحث عن رقم معقب؟ تواصل مع مكتب ابو محمد المطيري للإجابة عن استفساراتك وانجاز معاملاتك في الجوازات، المرور، مكتب العمل بأسرع وقت والدفع بعد الإنجاز.',
-};
+export const metadata = createPageMetadata({
+  title: 'رقم معقب للتواصل والاستشارات',
+  description: 'تواصل مع مكتب ابو محمد المطيري على الرقم 0547147102 للاستفسار عن تصاريح الزواج والتجنيس والتأشيرات والإقامة في السعودية، مع استقبال الطلبات طوال الأسبوع.',
+  path: '/contact',
+});
 
 export default function ContactPage() {
+  const pageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    '@id': `${SITE.url}/contact/#webpage`,
+    url: `${SITE.url}/contact`,
+    name: 'التواصل مع مكتب ابو محمد المطيري',
+    description: 'قنوات التواصل الرسمية للاستفسار وبدء معاملات تصاريح الزواج والتجنيس والتأشيرات.',
+    inLanguage: 'ar-SA',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    about: { '@id': `${SITE.url}/#business` },
+  };
+
   return (
     <div className="soft-grid min-h-screen overflow-hidden bg-primary-50/40 py-16 font-sans lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Breadcrumbs items={[{ name: 'الرئيسية', path: '/' }, { name: 'تواصل معنا', path: '/contact' }]} />
+        <JsonLd data={pageJsonLd} />
         
         {/* Header */}
         <ScrollReveal direction="up" duration={0.6} className="text-center mb-16 max-w-3xl mx-auto">
           <span className="section-kicker mb-6">
             دعم ومساندة
           </span>
-          <h1 className="mb-6 text-4xl font-black tracking-tight text-primary-900 md:text-5xl">ابقى على تواصل <span className="text-primary-500">معنا</span></h1>
+          <h1 className="mb-6 text-4xl font-black tracking-tight text-primary-900 md:text-5xl">تواصل مع مكتب <span className="text-primary-500">ابو محمد المطيري</span></h1>
           <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
             فريق الدعم وبدء المعاملات مستعد للرد على استفساراتكم والبدء في إنجاز أعمالكم فوراً. نحن دائماً في خدمتكم.
           </p>

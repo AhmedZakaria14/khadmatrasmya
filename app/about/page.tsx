@@ -1,16 +1,34 @@
 import { ShieldCheck, CheckCircle2, Building, Target, Scale, Award } from 'lucide-react';
 import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { createPageMetadata, SITE } from '@/lib/seo';
 
-export const metadata = {
-  title: 'عن مكتب ابو محمد المطيري | أفضل مكتب معقب في السعودية',
-  description: 'تعرف على مكتب ابو محمد المطيري أفضل معقب في السعودية. ننجز كافة المعاملات الحكومية (الجوازات، مكتب العمل، المرور) بسرعة وبمصداقية مع الدفع بعد الإنجاز.',
-};
+export const metadata = createPageMetadata({
+  title: 'عن المكتب وخبرتنا في المعاملات الرسمية',
+  description: 'تعرف على خبرة مكتب ابو محمد المطيري في متابعة تصاريح الزواج ومعاملات التجنيس والتأشيرات داخل السعودية، مع الالتزام والسرية والدفع بعد الإنجاز.',
+  path: '/about',
+});
 
 export default function AboutPage() {
+  const pageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${SITE.url}/about/#webpage`,
+    url: `${SITE.url}/about`,
+    name: 'عن مكتب ابو محمد المطيري',
+    description: 'نبذة عن المكتب وخبرته وقيمه في متابعة المعاملات الرسمية داخل المملكة العربية السعودية.',
+    inLanguage: 'ar-SA',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    about: { '@id': `${SITE.url}/#business` },
+  };
+
   return (
     <div className="min-h-screen overflow-hidden bg-white py-16 font-sans lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Breadcrumbs items={[{ name: 'الرئيسية', path: '/' }, { name: 'من نحن', path: '/about' }]} />
+        <JsonLd data={pageJsonLd} />
         
         {/* Header */}
         <ScrollReveal direction="up" duration={0.6} className="mx-auto mb-20 max-w-3xl text-center">

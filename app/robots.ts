@@ -2,10 +2,13 @@ import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
     sitemap: 'https://taqeeb-office.com/sitemap.xml',
+    host: 'https://taqeeb-office.com',
   };
 }

@@ -11,6 +11,19 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import JsonLd from '@/components/JsonLd';
+import { createPageMetadata, SITE } from '@/lib/seo';
+
+const homeMetadata = createPageMetadata({
+  title: 'تصاريح الزواج والتجنيس والتأشيرات في السعودية',
+  description: 'إنجاز تصاريح وموافقات الزواج، معاملات التجنيس، وخدمات التأشيرات والإقامة في السعودية بمتابعة واضحة والدفع بعد الإنجاز. تواصل مباشرة للاستشارة.',
+  path: '/',
+});
+
+export const metadata = {
+  ...homeMetadata,
+  title: { absolute: 'مكتب ابو محمد المطيري | تصاريح الزواج والتجنيس والتأشيرات' },
+};
 
 const services = [
   {
@@ -64,8 +77,22 @@ const features = [
 ];
 
 export default function Home() {
+  const pageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${SITE.url}/#webpage`,
+    url: SITE.url,
+    name: 'تصاريح الزواج والتجنيس والتأشيرات في السعودية',
+    description: SITE.description,
+    inLanguage: 'ar-SA',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    about: { '@id': `${SITE.url}/#business` },
+    primaryImageOfPage: `${SITE.url}${SITE.socialImage}`,
+  };
+
   return (
     <div className="flex min-h-screen flex-col font-sans">
+      <JsonLd data={pageJsonLd} />
       <section className="relative flex min-h-[calc(100svh-76px)] items-center justify-center overflow-hidden bg-primary-950 text-white lg:min-h-[calc(100svh-88px)]">
         <Image
           src="/images/sections/hero-saudi-office.webp"
