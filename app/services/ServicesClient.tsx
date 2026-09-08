@@ -15,6 +15,7 @@ import {
   User,
 } from 'lucide-react';
 import { useState } from 'react';
+import { servicePages } from '@/lib/service-pages';
 
 const services = [
   {
@@ -54,6 +55,11 @@ const services = [
     ],
   },
 ];
+
+const getServiceHref = (label: string) => {
+  const detail = servicePages.find((page) => page.cardLabel === label);
+  return detail ? `/services/${detail.slug}` : '/services';
+};
 
 export default function ServicesClient() {
   const [search, setSearch] = useState('');
@@ -116,15 +122,22 @@ export default function ServicesClient() {
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   {service.items.map((item) => (
-                    <article key={item.label} className="overflow-hidden rounded-[12px] border border-primary-100 bg-white shadow-[0_5px_16px_rgba(0,0,0,.08)]">
+                    <Link
+                      key={item.label}
+                      href={getServiceHref(item.label)}
+                      className="group overflow-hidden rounded-[12px] border border-primary-100 bg-white shadow-[0_5px_16px_rgba(0,0,0,.08)] transition hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(0,71,79,.16)]"
+                    >
                       <div className="relative aspect-[16/9] bg-primary-50">
-                        <Image src={item.image} alt={item.label} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+                        <Image src={item.image} alt={item.label} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition duration-300 group-hover:scale-[1.025]" />
                       </div>
                       <div className="flex items-start gap-3 px-5 py-5">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent-500" />
-                        <h3 className="text-sm font-bold leading-7 text-black">{item.label}</h3>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="text-sm font-bold leading-7 text-black">{item.label}</h3>
+                          <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-primary-500">تفاصيل الخدمة <ChevronLeft className="h-3.5 w-3.5" /></span>
+                        </div>
                       </div>
-                    </article>
+                    </Link>
                   ))}
                 </div>
 
