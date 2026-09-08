@@ -10,17 +10,17 @@ type BreadcrumbItem = {
 export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   return (
     <>
-      <nav aria-label="مسار التنقل" className="mb-8 text-sm font-bold text-gray-500">
+      <nav aria-label="مسار التنقل" className="mb-8 text-sm font-bold text-white/75">
         <ol className="flex flex-wrap items-center gap-2">
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
             return (
               <li key={item.path} className="flex items-center gap-2">
-                {index > 0 && <span aria-hidden="true">/</span>}
+                {index > 0 && <span aria-hidden="true" className="text-white/50">/</span>}
                 {isLast ? (
-                  <span aria-current="page" className="text-primary-700">{item.name}</span>
+                  <span aria-current="page" className="text-white">{item.name}</span>
                 ) : (
-                  <Link href={item.path} className="transition hover:text-primary-600">{item.name}</Link>
+                  <Link href={item.path} className="transition hover:text-accent-300">{item.name}</Link>
                 )}
               </li>
             );
