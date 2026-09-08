@@ -89,7 +89,7 @@ export default function Home() {
 
       <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden text-white md:min-h-[78vh]">
         <Image
-          src="/images/sections/hero-saudi-office.webp"
+          src="/images/sections/ingaz-main-hero.jpg"
           alt="مكتب ابو محمد المطيري للخدمات والمعاملات الرسمية"
           fill
           priority
