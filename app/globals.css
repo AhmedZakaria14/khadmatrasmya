@@ -1,29 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-tajawal), ui-sans-serif, system-ui, sans-serif;
-  --color-primary-50: #effbfb;
-  --color-primary-100: #d6f3f4;
-  --color-primary-200: #afe7e9;
-  --color-primary-300: #78d4d8;
-  --color-primary-400: #3db9c0;
-  --color-primary-500: #149ca5;
-  --color-primary-600: #0b828b;
-  --color-primary-700: #0b6870;
-  --color-primary-800: #0c535a;
-  --color-primary-900: #083f46;
-  --color-primary-950: #052f35;
-  --color-accent-50: #f1fbf1;
-  --color-accent-100: #dff5df;
-  --color-accent-200: #c0eac0;
-  --color-accent-300: #8ed98f;
-  --color-accent-400: #63c765;
-  --color-accent-500: #50b95b;
-  --color-accent-600: #379a42;
-  --color-accent-700: #2e7a37;
+  --font-sans: var(--font-almarai), ui-sans-serif, system-ui, sans-serif;
+  --color-primary-50: #edfafa;
+  --color-primary-100: #d3f1f2;
+  --color-primary-200: #a8e3e6;
+  --color-primary-300: #70ced3;
+  --color-primary-400: #35b1b9;
+  --color-primary-500: #008891;
+  --color-primary-600: #007a82;
+  --color-primary-700: #006d77;
+  --color-primary-800: #005a63;
+  --color-primary-900: #00474f;
+  --color-primary-950: #00343a;
+  --color-accent-50: #f2fbf1;
+  --color-accent-100: #dff4dc;
+  --color-accent-200: #bfe9ba;
+  --color-accent-300: #95d88d;
+  --color-accent-400: #70c568;
+  --color-accent-500: #57b654;
+  --color-accent-600: #41953f;
+  --color-accent-700: #347633;
 }
 
-html, body {
+html,
+body {
   font-family: var(--font-sans);
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -31,58 +32,114 @@ html, body {
 
 body {
   background: #ffffff;
-  color: #083f46;
+  color: #111111;
+}
+
+.font-display {
+  font-family: var(--font-cairo), var(--font-sans);
 }
 
 button,
 a,
 input,
-select {
+select,
+textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
-  background: #149ca5;
+  background: #008891;
   color: #ffffff;
 }
 
-.soft-grid {
+.soft-grid,
+.ingaz-pattern {
   background-image:
-    linear-gradient(rgba(20, 156, 165, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 156, 165, 0.045) 1px, transparent 1px);
-  background-size: 34px 34px;
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.12) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 80% 65%, rgba(255,255,255,.10) 0 1px, transparent 1.5px);
+  background-size: 30px 30px, 44px 44px;
 }
 
 .hero-overlay {
-  background:
-    linear-gradient(180deg, rgba(4, 38, 43, 0.38) 0%, rgba(5, 47, 53, 0.7) 56%, rgba(4, 34, 39, 0.88) 100%),
-    linear-gradient(90deg, rgba(5, 47, 53, 0.28), rgba(5, 47, 53, 0.08));
+  background: rgba(0, 0, 0, 0.58);
 }
 
 .section-kicker {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  color: #149ca5;
-  font-size: 0.82rem;
+  gap: .7rem;
+  color: #008891;
+  font-family: var(--font-cairo), var(--font-sans);
+  font-size: 1.55rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  line-height: 1.35;
 }
 
 .section-kicker::before {
   content: "";
-  width: 2rem;
-  height: 2px;
-  border-radius: 999px;
-  background: #50b95b;
+  width: 5px;
+  height: 1.65em;
+  background: #00474f;
+}
+
+.ingaz-feature-card {
+  border-style: solid;
+  border-color: #008891;
+  border-width: 2px 2px 7px 7px;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: border-width .35s ease, border-color .35s ease, transform .35s ease, box-shadow .35s ease;
+}
+
+.ingaz-feature-card:hover {
+  border-width: 2px 2px 2px 7px;
+  border-color: #00474f;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(0, 71, 79, .10);
+}
+
+.ingaz-about-image {
+  border-radius: 16px 68px 16px 68px;
+  box-shadow: 0 0 10px rgba(0, 71, 79, .5);
+}
+
+.ingaz-service-card {
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .35);
+}
+
+.ingaz-page-hero {
+  background:
+    linear-gradient(rgba(0, 71, 79, .87), rgba(0, 109, 119, .87)),
+    url('/images/sections/hero-saudi-office.webp') center/cover no-repeat;
+}
+
+.ingaz-button {
+  border-radius: 9px;
+  transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+.ingaz-button:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+  .section-kicker {
+    font-size: 1.35rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html, body {
+  html,
+  body {
     scroll-behavior: auto;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
