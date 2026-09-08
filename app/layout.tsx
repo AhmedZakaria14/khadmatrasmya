@@ -1,6 +1,6 @@
-import type {Metadata} from 'next';
-import { Cairo } from 'next/font/google';
-import './globals.css'; // Global styles
+import type { Metadata } from 'next';
+import { Almarai, Cairo } from 'next/font/google';
+import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingContact from '@/components/FloatingContact';
@@ -9,8 +9,16 @@ import { SITE } from '@/lib/seo';
 
 const cairo = Cairo({
   subsets: ['arabic'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-tajawal',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-cairo',
+  display: 'swap',
+});
+
+const almarai = Almarai({
+  subsets: ['arabic'],
+  weight: ['300', '400', '700', '800'],
+  variable: '--font-almarai',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -43,12 +51,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: [
-      {
-        url: SITE.logo,
-        href: SITE.logo,
-      },
-    ],
+    icon: [{ url: SITE.logo, href: SITE.logo }],
     shortcut: SITE.logo,
     apple: SITE.logo,
   },
@@ -76,7 +79,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -127,15 +130,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         },
         openingHoursSpecification: {
           '@type': 'OpeningHoursSpecification',
-          dayOfWeek: [
-            'Sunday',
-            'Monday',
-            'Tuesday',
-            'Wednesday',
-            'Thursday',
-            'Friday',
-            'Saturday',
-          ],
+          dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           opens: '00:00',
           closes: '23:59',
         },
@@ -153,15 +148,13 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   };
 
   return (
-    <html lang="ar-SA" dir="rtl" className={cairo.variable}>
+    <html lang="ar-SA" dir="rtl" className={`${cairo.variable} ${almarai.variable}`}>
       <head>
         <JsonLd data={jsonLd} />
       </head>
-      <body className="font-sans antialiased text-primary-900 bg-[#FAFAFA] min-h-screen flex flex-col selection:bg-accent-500 selection:text-white" suppressHydrationWarning>
+      <body className="min-h-screen flex flex-col bg-white text-black antialiased" suppressHydrationWarning>
         <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <FloatingContact />
         <Footer />
       </body>
