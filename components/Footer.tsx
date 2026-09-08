@@ -30,18 +30,21 @@ export default function Footer() {
             <h2 className="font-display mb-6 text-center text-[23px] font-semibold text-white lg:text-right">روابط مهمة</h2>
             <ul className="space-y-3 text-center text-[15px] font-normal lg:text-right">
               <li><Link href="/" className="hover:text-accent-300">الرئيسية</Link></li>
-              <li><Link href="/services" className="hover:text-accent-300">الخدمات</Link></li>
+              <li><Link href="/services" className="hover:text-accent-300">جميع الخدمات</Link></li>
               <li><Link href="/about" className="hover:text-accent-300">من نحن</Link></li>
               <li><Link href="/contact" className="hover:text-accent-300">تواصل معنا</Link></li>
             </ul>
           </div>
 
           <div>
-            <h2 className="font-display mb-6 text-center text-[23px] font-semibold text-white lg:text-right">خدماتنا</h2>
-            <ul className="space-y-3 text-center text-[15px] font-normal leading-7 lg:text-right">
-              <li><Link href="/services" className="hover:text-accent-300">استخراج تصاريح الزواج</Link></li>
-              <li><Link href="/services" className="hover:text-accent-300">خدمات التجنيس في السعودية</Link></li>
-              <li><Link href="/services" className="hover:text-accent-300">التأشيرات وشؤون الإقامة</Link></li>
+            <h2 className="font-display mb-6 text-center text-[23px] font-semibold text-white lg:text-right">أهم خدماتنا</h2>
+            <ul className="space-y-3 text-center text-[14px] font-normal leading-7 lg:text-right">
+              <li><Link href="/services/تصريح-زواج-سعودي-من-أجنبية-مقيمة" className="hover:text-accent-300">تصريح زواج سعودي من أجنبية مقيمة</Link></li>
+              <li><Link href="/services/موافقة-زواج-سعودية-من-أجنبي" className="hover:text-accent-300">موافقة زواج سعودية من أجنبي</Link></li>
+              <li><Link href="/services/تجنيس-زوجة-مواطن" className="hover:text-accent-300">تجنيس زوجة مواطن</Link></li>
+              <li><Link href="/services/تجنيس-أبناء-المواطنات-ومواليد-السعودية" className="hover:text-accent-300">تجنيس أبناء المواطنات والمواليد</Link></li>
+              <li><Link href="/services/التأشيرات-المهنية-للمؤسسات" className="hover:text-accent-300">التأشيرات المهنية للمؤسسات</Link></li>
+              <li><Link href="/services/تحويل-الزيارة-إلى-إقامة" className="hover:text-accent-300">تحويل الزيارة إلى إقامة</Link></li>
             </ul>
           </div>
 
