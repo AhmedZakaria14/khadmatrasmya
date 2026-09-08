@@ -5,7 +5,7 @@ export const SITE = {
   url: 'https://taqeeb-office.com',
   phone: '+966547147102',
   logo: '/images/brand/logo.png',
-  socialImage: '/images/sections/hero-saudi-office.webp',
+  socialImage: '/images/sections/ingaz-main-hero.jpg',
   description:
     'مكتب متخصص في استخراج تصاريح الزواج ومتابعة معاملات التجنيس والتأشيرات والإقامة في المملكة العربية السعودية، مع متابعة واضحة والدفع بعد الإنجاز.',
 } as const;
