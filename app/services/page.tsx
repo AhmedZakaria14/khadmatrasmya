@@ -32,8 +32,8 @@ export default function ServicesPage() {
   };
 
   return (
-    <div className="soft-grid min-h-screen bg-primary-50/35 py-16 font-sans lg:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="ingaz-pattern min-h-screen bg-primary-500 py-14 font-sans lg:py-20">
+      <div className="mx-auto max-w-[1180px] px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ name: 'الرئيسية', path: '/' }, { name: 'الخدمات', path: '/services' }]} />
         <JsonLd data={servicesJsonLd} />
         <ServicesClient />
