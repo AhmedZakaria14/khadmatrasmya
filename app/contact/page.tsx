@@ -40,7 +40,7 @@ export default function ContactPage() {
 
       <section className="py-16 lg:py-24">
         <div className="mx-auto grid max-w-[1180px] gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
-          <div className="rounded-[16px] border border-primary-100 bg-primary-50 px-7 py-10 shadow-[0_8px_26px_rgba(0,71,79,.10)] sm:px-10">
+          <div className="rounded-[16px] border border-primary-100 bg-primary-50 px-7 py-10 shadow-[0_8px_26px_rgba(20,40,58,.10)] sm:px-10">
             <h2 className="font-display mb-7 border-r-4 border-primary-900 pr-3 text-2xl font-semibold text-primary-900">
               يسعدنا استقبال استفساراتكم وأسئلتكم
             </h2>

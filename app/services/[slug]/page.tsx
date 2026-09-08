@@ -221,7 +221,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               <h2 className="font-display mb-6 text-2xl font-extrabold text-primary-900">خطوات مراجعة ومتابعة المعاملة</h2>
               <ol className="space-y-4">
                 {service.steps.map((step, index) => (
-                  <li key={step} className="flex items-start gap-4 rounded-[10px] border border-primary-100 bg-white p-5 shadow-[0_5px_18px_rgba(0,71,79,.07)]">
+                  <li key={step} className="flex items-start gap-4 rounded-[10px] border border-primary-100 bg-white p-5 shadow-[0_5px_18px_rgba(20,40,58,.07)]">
                     <span className="font-display flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-500 text-sm font-bold text-white">{index + 1}</span>
                     <p className="pt-1 text-[15px] leading-7 text-[#222]">{step}</p>
                   </li>
@@ -244,7 +244,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </section>
 
             <section className="pt-12">
-              <div className="grid overflow-hidden rounded-[16px] border border-primary-100 bg-white shadow-[0_12px_35px_rgba(0,71,79,.11)] md:grid-cols-[1fr_auto] md:items-center">
+              <div className="grid overflow-hidden rounded-[16px] border border-primary-100 bg-white shadow-[0_12px_35px_rgba(20,40,58,.11)] md:grid-cols-[1fr_auto] md:items-center">
                 <div className="p-7 md:p-9">
                   <h2 className="font-display mb-3 text-2xl font-bold text-primary-900">هل تريد تقييم حالتك قبل البدء؟</h2>
                   <p className="text-[14px] leading-7 text-[#333]">أرسل تفاصيل المعاملة بشكل مختصر، وسيتم توضيح المستندات المبدئية والمسار المتوقع قبل بدء المتابعة.</p>

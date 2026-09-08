@@ -2,25 +2,25 @@
 
 @theme {
   --font-sans: var(--font-almarai), ui-sans-serif, system-ui, sans-serif;
-  --color-primary-50: #edfafa;
-  --color-primary-100: #d3f1f2;
-  --color-primary-200: #a8e3e6;
-  --color-primary-300: #70ced3;
-  --color-primary-400: #35b1b9;
-  --color-primary-500: #008891;
-  --color-primary-600: #007a82;
-  --color-primary-700: #006d77;
-  --color-primary-800: #005a63;
-  --color-primary-900: #00474f;
-  --color-primary-950: #00343a;
-  --color-accent-50: #f2fbf1;
-  --color-accent-100: #dff4dc;
-  --color-accent-200: #bfe9ba;
-  --color-accent-300: #95d88d;
-  --color-accent-400: #70c568;
-  --color-accent-500: #57b654;
-  --color-accent-600: #41953f;
-  --color-accent-700: #347633;
+  --color-primary-50: #f3f6f9;
+  --color-primary-100: #e3e9ef;
+  --color-primary-200: #c6d1dc;
+  --color-primary-300: #9eafbf;
+  --color-primary-400: #71879b;
+  --color-primary-500: #3e5f7b;
+  --color-primary-600: #2f4d68;
+  --color-primary-700: #243e56;
+  --color-primary-800: #1c3247;
+  --color-primary-900: #14283a;
+  --color-primary-950: #0b1926;
+  --color-accent-50: #fffaf0;
+  --color-accent-100: #faf0d3;
+  --color-accent-200: #f2d79b;
+  --color-accent-300: #e4b85e;
+  --color-accent-400: #c99231;
+  --color-accent-500: #a86f20;
+  --color-accent-600: #8b571a;
+  --color-accent-700: #704317;
 }
 
 html,
@@ -48,7 +48,7 @@ textarea {
 }
 
 ::selection {
-  background: #008891;
+  background: #a86f20;
   color: #ffffff;
 }
 
@@ -64,18 +64,18 @@ textarea {
 .section-kicker {
   display: inline-flex;
   align-items: center;
-  color: #008891;
+  color: #3e5f7b;
   font-family: var(--font-cairo), var(--font-sans);
   font-size: 29px;
   font-weight: 800;
   line-height: 1.35;
   padding-right: 11px;
-  border-right: 5px solid #00474f;
+  border-right: 5px solid #a86f20;
 }
 
 .ingaz-feature-card {
   border-style: solid;
-  border-color: #008891;
+  border-color: #3e5f7b;
   border-width: 2px 2px 7px 7px;
   border-radius: 8px;
   background: #ffffff;
@@ -84,17 +84,17 @@ textarea {
 
 .ingaz-feature-card:hover {
   border-width: 2px 2px 2px 7px;
-  border-color: #00474f;
-  box-shadow: 0 10px 25px rgba(0, 71, 79, .08);
+  border-color: #a86f20;
+  box-shadow: 0 10px 25px rgba(20, 40, 58, .08);
 }
 
 .ingaz-about-image {
   border-radius: 16px 68px 16px 68px;
-  box-shadow: 0 0 10px rgba(0, 71, 79, .5);
+  box-shadow: 0 0 10px rgba(20, 40, 58, .5);
 }
 
 .ingaz-pattern {
-  background-color: #008891;
+  background-color: #243e56;
   background-image:
     radial-gradient(circle at 12% 22%, rgba(255,255,255,.16) 0 1.5px, transparent 1.7px),
     radial-gradient(circle at 70% 14%, rgba(255,255,255,.10) 0 1.3px, transparent 1.5px),
@@ -113,7 +113,7 @@ textarea {
 
 .ingaz-page-hero {
   background:
-    linear-gradient(rgba(0, 71, 79, .87), rgba(0, 109, 119, .87)),
+    linear-gradient(rgba(11, 25, 38, .9), rgba(36, 62, 86, .88)),
     url('/images/sections/hero-saudi-office.webp') center/cover no-repeat;
 }
 

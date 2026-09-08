@@ -125,7 +125,7 @@ export default function ServicesClient() {
                     <Link
                       key={item.label}
                       href={getServiceHref(item.label)}
-                      className="group overflow-hidden rounded-[12px] border border-primary-100 bg-white shadow-[0_5px_16px_rgba(0,0,0,.08)] transition hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(0,71,79,.16)]"
+                      className="group overflow-hidden rounded-[12px] border border-primary-100 bg-white shadow-[0_5px_16px_rgba(0,0,0,.08)] transition hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(20,40,58,.16)]"
                     >
                       <div className="relative aspect-[16/9] bg-primary-50">
                         <Image src={item.image} alt={item.label} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition duration-300 group-hover:scale-[1.025]" />

@@ -84,7 +84,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`flex h-[80px] items-center px-4 text-[15px] font-semibold transition-colors ${active ? 'text-[#7b0cab]' : 'text-[#222] hover:text-primary-500'}`}
+                className={`flex h-[80px] items-center px-4 text-[15px] font-semibold transition-colors ${active ? 'text-accent-600' : 'text-[#222] hover:text-primary-500'}`}
               >
                 {link.label}
               </Link>
@@ -209,7 +209,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block border-b border-[#e5e5e5] px-4 py-3.5 text-sm font-semibold ${pathname === link.href || (link.href === '/services' && pathname.startsWith('/services/')) ? 'text-[#7b0cab]' : 'text-[#222]'}`}
+                className={`block border-b border-[#e5e5e5] px-4 py-3.5 text-sm font-semibold ${pathname === link.href || (link.href === '/services' && pathname.startsWith('/services/')) ? 'text-accent-600' : 'text-[#222]'}`}
               >
                 {link.label}
               </Link>

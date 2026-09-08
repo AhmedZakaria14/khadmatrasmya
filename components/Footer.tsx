@@ -4,7 +4,7 @@ import { MapPin, MessageCircle, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="relative mt-auto overflow-hidden bg-[#006D77] text-white" id="footer">
+    <footer className="relative mt-auto overflow-hidden bg-primary-700 text-white" id="footer">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[65px] overflow-hidden" aria-hidden="true">
         <svg className="absolute left-1/2 top-0 h-[65px] w-[163%] -translate-x-1/2 fill-white" preserveAspectRatio="none" viewBox="0 0 283.5 27.8" xmlns="http://www.w3.org/2000/svg">
           <path d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z" />
