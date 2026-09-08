@@ -14,18 +14,21 @@ const links = [
 ];
 
 const searchIndex = [
-  { title: 'استخراج تصريح زواج سعودي من أجنبية مقيمة', href: '/services', group: 'تصاريح الزواج' },
-  { title: 'استخراج موافقة زواج من أجنبي غير مقيم', href: '/services', group: 'تصاريح الزواج' },
-  { title: 'استخراج موافقة زواج مفتوح', href: '/services', group: 'تصاريح الزواج' },
-  { title: 'استخراج موافقة زواج سعودية من أجنبي', href: '/services', group: 'تصاريح الزواج' },
-  { title: 'تجنيس الكفاءات والأطباء', href: '/services', group: 'خدمات التجنيس' },
-  { title: 'تجنيس المستثمرين ورجال الأعمال', href: '/services', group: 'خدمات التجنيس' },
-  { title: 'تجنيس زوجة مواطن', href: '/services', group: 'خدمات التجنيس' },
-  { title: 'تجنيس أبناء المواطنات ومواليد المملكة', href: '/services', group: 'خدمات التجنيس' },
-  { title: 'استخراج التأشيرات المهنية للمؤسسات', href: '/services', group: 'التأشيرات والإقامة' },
-  { title: 'استخراج تأشيرات فردية عمالية', href: '/services', group: 'التأشيرات والإقامة' },
-  { title: 'تحويل تأشيرة الزيارة إلى إقامة نظامية', href: '/services', group: 'التأشيرات والإقامة' },
-  { title: 'استخراج موافقة لزوج مقيم', href: '/services', group: 'التأشيرات والإقامة' },
+  { title: 'استخراج تصريح زواج سعودي من أجنبية مقيمة', href: '/services/تصريح-زواج-سعودي-من-أجنبية-مقيمة', group: 'تصاريح الزواج' },
+  { title: 'استخراج موافقة زواج من أجنبي غير مقيم', href: '/services/موافقة-زواج-من-أجنبي-غير-مقيم', group: 'تصاريح الزواج' },
+  { title: 'استخراج موافقة زواج مفتوح', href: '/services/موافقة-زواج-مفتوح', group: 'تصاريح الزواج' },
+  { title: 'استخراج موافقة زواج سعودية من أجنبي', href: '/services/موافقة-زواج-سعودية-من-أجنبي', group: 'تصاريح الزواج' },
+  { title: 'تجنيس الكفاءات والأطباء', href: '/services/تجنيس-الكفاءات-والأطباء', group: 'خدمات التجنيس' },
+  { title: 'تجنيس المستثمرين ورجال الأعمال', href: '/services/تجنيس-المستثمرين-ورجال-الأعمال', group: 'خدمات التجنيس' },
+  { title: 'تجنيس زوجة مواطن', href: '/services/تجنيس-زوجة-مواطن', group: 'خدمات التجنيس' },
+  { title: 'تجنيس أبناء المواطنات ومواليد المملكة', href: '/services/تجنيس-أبناء-المواطنات-ومواليد-السعودية', group: 'خدمات التجنيس' },
+  { title: 'استخراج التأشيرات المهنية للمؤسسات', href: '/services/التأشيرات-المهنية-للمؤسسات', group: 'التأشيرات والإقامة' },
+  { title: 'استخراج تأشيرات فردية عمالية', href: '/services/تأشيرات-فردية-عمالية', group: 'التأشيرات والإقامة' },
+  { title: 'تحويل تأشيرة الزيارة إلى إقامة نظامية', href: '/services/تحويل-الزيارة-إلى-إقامة', group: 'التأشيرات والإقامة' },
+  { title: 'استخراج موافقة لزوج مقيم', href: '/services/موافقة-لزوج-مقيم', group: 'التأشيرات والإقامة' },
+  { title: 'مكتب استخراج تصريح زواج', href: '/services/تصريح-زواج-سعودي-من-أجنبية-مقيمة', group: 'كلمات شائعة' },
+  { title: 'معقب موافقات زواج', href: '/services/موافقة-زواج-مفتوح', group: 'كلمات شائعة' },
+  { title: 'طلبات التجنيس في السعودية', href: '/services/تجنيس-زوجة-مواطن', group: 'كلمات شائعة' },
   { title: 'من نحن وخبرة المكتب', href: '/about', group: 'الموقع' },
   { title: 'التواصل مع مكتب ابو محمد المطيري', href: '/contact', group: 'الموقع' },
 ];
@@ -76,7 +79,7 @@ export default function Navbar() {
 
         <nav className="hidden flex-1 items-center justify-center gap-1 lg:flex" aria-label="التنقل الرئيسي">
           {links.map((link) => {
-            const active = pathname === link.href;
+            const active = pathname === link.href || (link.href === '/services' && pathname.startsWith('/services/'));
             return (
               <Link
                 key={link.href}
@@ -206,7 +209,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block border-b border-[#e5e5e5] px-4 py-3.5 text-sm font-semibold ${pathname === link.href ? 'text-[#7b0cab]' : 'text-[#222]'}`}
+                className={`block border-b border-[#e5e5e5] px-4 py-3.5 text-sm font-semibold ${pathname === link.href || (link.href === '/services' && pathname.startsWith('/services/')) ? 'text-[#7b0cab]' : 'text-[#222]'}`}
               >
                 {link.label}
               </Link>
