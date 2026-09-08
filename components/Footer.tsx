@@ -53,8 +53,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-white/20 pt-7 text-center text-sm font-normal text-white/90">
+        <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/20 pt-7 text-center text-sm font-normal text-white/90 sm:flex-row sm:text-right">
           <p>© {new Date().getFullYear()} مكتب ابو محمد المطيري. جميع الحقوق محفوظة.</p>
+          <a href="https://nasharhub.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-accent-300">
+            تم التصميم والتطوير بواسطة <span className="font-bold">NasharHub.com</span>
+          </a>
         </div>
       </div>
     </footer>
