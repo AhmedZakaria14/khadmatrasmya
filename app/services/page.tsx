@@ -2,6 +2,7 @@ import ServicesClient from './ServicesClient';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { createPageMetadata, SITE } from '@/lib/seo';
+import { servicePages } from '@/lib/service-pages';
 
 export const metadata = createPageMetadata({
   title: 'خدمات تصاريح الزواج والتجنيس والتأشيرات',
@@ -14,19 +15,18 @@ export default function ServicesPage() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'خدمات مكتب ابو محمد المطيري',
-    itemListElement: [
-      'تصريحات وموافقات الزواج',
-      'خدمات التجنيس النوعية',
-      'خدمات التأشيرات والمقيمين',
-    ].map((name, index) => ({
+    numberOfItems: servicePages.length,
+    itemListElement: servicePages.map((service, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       item: {
         '@type': 'Service',
-        name,
-        url: `${SITE.url}/services`,
+        name: service.title,
+        description: service.metaDescription,
+        url: `${SITE.url}/services/${encodeURIComponent(service.slug)}`,
         provider: { '@id': `${SITE.url}/#business` },
         areaServed: 'المملكة العربية السعودية',
+        image: `${SITE.url}${service.image}`,
       },
     })),
   };
