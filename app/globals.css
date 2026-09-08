@@ -52,34 +52,25 @@ textarea {
   color: #ffffff;
 }
 
-.soft-grid,
-.ingaz-pattern {
-  background-image:
-    radial-gradient(circle at 20% 10%, rgba(255,255,255,.12) 0 1px, transparent 1.5px),
-    radial-gradient(circle at 80% 65%, rgba(255,255,255,.10) 0 1px, transparent 1.5px);
-  background-size: 30px 30px, 44px 44px;
+.ingaz-container {
+  width: min(100% - 32px, 1140px);
+  margin-inline: auto;
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.58);
+  background: rgba(0, 0, 0, 0.66);
 }
 
 .section-kicker {
   display: inline-flex;
   align-items: center;
-  gap: .7rem;
   color: #008891;
   font-family: var(--font-cairo), var(--font-sans);
-  font-size: 1.55rem;
+  font-size: 29px;
   font-weight: 800;
   line-height: 1.35;
-}
-
-.section-kicker::before {
-  content: "";
-  width: 5px;
-  height: 1.65em;
-  background: #00474f;
+  padding-right: 11px;
+  border-right: 5px solid #00474f;
 }
 
 .ingaz-feature-card {
@@ -88,14 +79,13 @@ textarea {
   border-width: 2px 2px 7px 7px;
   border-radius: 8px;
   background: #ffffff;
-  transition: border-width .35s ease, border-color .35s ease, transform .35s ease, box-shadow .35s ease;
+  transition: border-width 1s ease, border-color 1s ease, box-shadow .35s ease;
 }
 
 .ingaz-feature-card:hover {
   border-width: 2px 2px 2px 7px;
   border-color: #00474f;
-  transform: translateY(-3px);
-  box-shadow: 0 14px 34px rgba(0, 71, 79, .10);
+  box-shadow: 0 10px 25px rgba(0, 71, 79, .08);
 }
 
 .ingaz-about-image {
@@ -103,11 +93,22 @@ textarea {
   box-shadow: 0 0 10px rgba(0, 71, 79, .5);
 }
 
+.ingaz-pattern {
+  background-color: #008891;
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(255,255,255,.16) 0 1.5px, transparent 1.7px),
+    radial-gradient(circle at 70% 14%, rgba(255,255,255,.10) 0 1.3px, transparent 1.5px),
+    radial-gradient(circle at 83% 78%, rgba(255,255,255,.12) 0 1.4px, transparent 1.6px),
+    linear-gradient(135deg, transparent 0 48%, rgba(255,255,255,.035) 49% 51%, transparent 52% 100%);
+  background-size: 38px 38px, 52px 52px, 44px 44px, 80px 80px;
+  background-position: 100% 6%, 0 0, 40% 20%, 0 0;
+}
+
 .ingaz-service-card {
   overflow: hidden;
   border-radius: 16px;
   background: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .35);
+  box-shadow: 0 0 10px rgb(0 0 0 / .5);
 }
 
 .ingaz-page-hero {
@@ -122,12 +123,27 @@ textarea {
 }
 
 .ingaz-button:hover {
-  transform: translateY(-1px);
+  transform: scale(1.025);
+}
+
+.ingaz-contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
 }
 
 @media (max-width: 767px) {
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.56);
+  }
+
   .section-kicker {
-    font-size: 1.35rem;
+    font-size: 24px;
+  }
+
+  .ingaz-container {
+    width: min(100% - 30px, 767px);
   }
 }
 
